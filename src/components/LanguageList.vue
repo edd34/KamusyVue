@@ -4,7 +4,7 @@
       <ul class="list-group">
         <li class="list-group-item" v-for="(Language, index) in this.languages"
           :key="index">
-          {{ 'id : ' + Language.id + ' - Langue : ' + Language.name}}
+          {{ 'id : ' + Language.id + ' - ' + Language.name + ' (3 mots)'}}
         </li>
       </ul>
  </div>

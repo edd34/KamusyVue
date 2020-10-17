@@ -17,6 +17,12 @@ export default new Router({
             name: "languages-list",
             component: () =>
                 import ("./components/LanguageList")
+        },
+        {
+            path: "/translate",
+            name: "translations-list",
+            component: () =>
+                import ("./components/TranslateList")
         }
     ]
 });
