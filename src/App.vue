@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="/" class="navbar-brand">Kamusy</a>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a href="/words" class="nav-link">Mots</a>
-        </li>
-        <li class="nav-item">
-          <a href="/languages" class="nav-link">Langues</a>
-        </li>
-        <li class="nav-item">
-          <a href="/translate" class="nav-link">Traduction</a>
-        </li>
-      </div>
-    </nav>
+    
+    <div>
+  <b-navbar type="dark" variant="dark">
+    <b-navbar-nav>
+      <b-nav-item href="#">Home</b-nav-item>
+
+      <!-- Navbar dropdowns -->
+      <b-nav-item-dropdown text="Lang" right>
+        <b-dropdown-item href="#">EN</b-dropdown-item>
+        <b-dropdown-item href="#">ES</b-dropdown-item>
+        <b-dropdown-item href="#">RU</b-dropdown-item>
+        <b-dropdown-item href="#">FA</b-dropdown-item>
+      </b-nav-item-dropdown>
+
+      <b-nav-item-dropdown text="User" right>
+        <b-dropdown-item href="#">Account</b-dropdown-item>
+        <b-dropdown-item href="#">Settings</b-dropdown-item>
+      </b-nav-item-dropdown>
+    </b-navbar-nav>
+  </b-navbar>
+</div>
 
     <div class="container mt-3">
       <router-view />
