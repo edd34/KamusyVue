@@ -11,19 +11,19 @@ export default new Router({
         component: () =>
             import ("./components/Home")
         },{
-            path: "/words",
+            path: "/browse-words",
             name: "words-list",
             component: () =>
                 import ("./components/WordList")
         },
         {
-            path: "/languages",
+            path: "/browse-languages",
             name: "languages-list",
             component: () =>
                 import ("./components/LanguageList")
         },
         {
-            path: "/translate",
+            path: "/browse-translations",
             name: "translations-list",
             component: () =>
                 import ("./components/TranslateList")
