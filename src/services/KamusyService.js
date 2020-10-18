@@ -22,6 +22,9 @@ class KamusyService {
     get_all_language() {
         return http.get('/languages/');
     }
+    add_language(language) {
+        return http.post('/language/', {"name": language});
+    }
     get_update_language() {
         return -1;
     }
