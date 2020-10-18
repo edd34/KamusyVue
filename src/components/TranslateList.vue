@@ -1,6 +1,6 @@
 <template>
  <div>
-  <h4>Listes des traductions</h4>
+  <h1>Gestionnaire traductions</h1>
       <ul class="list-group">
         <li class="list-group-item" v-for="(translations, index) in this.translations"
           :key="index">
@@ -42,5 +42,9 @@ export default {
 .edit-form {
   max-width: 300px;
   margin: auto;
+}
+
+h1 {
+  text-align: center;
 }
 </style>
