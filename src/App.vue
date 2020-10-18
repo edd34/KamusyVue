@@ -19,6 +19,9 @@
         <b-dropdown-item href="/browse-translations">Consulter Traductions</b-dropdown-item>
         <b-dropdown-item href="/add-translation">Ajouter une Traduction</b-dropdown-item>
       </b-nav-item-dropdown>
+      <b-nav-item href="#">Quizz</b-nav-item>
+      <b-nav-item href="#">Aide</b-nav-item>
+      <b-nav-item href="#">À propos</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
 </div>

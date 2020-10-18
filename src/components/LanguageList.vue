@@ -2,9 +2,9 @@
  <div>
   <h4>Listes des langues</h4>
       <ul class="list-group">
-        <li class="list-group-item" v-for="(Language, index) in this.languages"
+        <li class="list-group-item" v-for="(item, index) in this.languages"
           :key="index">
-          {{ 'id : ' + Language.id + ' - ' + Language.name + ' (3 mots)'}}
+          {{index + '. ' + item.language.name + ' : '+item.count +' mot(s)'}}
         </li>
       </ul>
  </div>

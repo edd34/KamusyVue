@@ -33,6 +33,12 @@ export default new Router({
             name: "add-language",
             component: () =>
                 import ("./components/AddLanguage")
+        },
+        {
+            path: "/add-translation",
+            name: "add-translation",
+            component: () =>
+                import ("./components/AddTranslation")
         }
     ]
 });

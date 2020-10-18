@@ -1,11 +1,14 @@
 <template>
  <div>
   <h1>Gestionnaire traductions</h1>
-      <ul class="list-group">
+      <ul class="list-group" v-if="translations">
         <li class="list-group-item" v-for="(translations, index) in this.translations"
           :key="index">
           {{translations.current_word_name +' ('+ translations.current_word_language+')' + ' -> ' + translations.translated_word_name + ' (' + translations.translated_word_language +')' }}
         </li>
+      </ul>
+      <ul class="list-group" v-else>
+        <li class="list-group-item"> Cliquer ici pour ajouter une traduction</li>
       </ul>
  </div>
 </template>
